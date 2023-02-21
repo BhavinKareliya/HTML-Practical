@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --bs-primary-rgb: #2874f0 !important;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary-rgb) !important;
+}
+
+.navbar{
+    height: 56px;
+}
+
+.explore{
+    min-width: 137px;
+    text-align: end;
+    margin-right: 0;
+}
+
+.explore p{
+    margin-top: -3px;
+    color: #fff;
+    font-style: italic;
+    font-size: 11px;
+    margin-bottom: 0px;
+}
+
+.explore span{
+    color: #ffe500;
+}
+
+.navMenu{
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.navMenu li a{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navMenu li a:hover{
+    color: #fff;
+}
+
+#searchInp{
+    font-size: 14px;
+    outline: none;
+    padding: 0px 16px;
+    margin: 0 auto 0 12px;
+    border-radius: 2px 0 0 2px;
+    border: inherit;
+}
+
+.nav-link:focus {
+    color: #fff;
+}
+.navMenu .dropdown-menu {
+    margin-top: 10px;
+    margin-left: -10s0px;
+    border-radius: 0;
+    border: none;
+    padding: 0px;
+    width: 240px;
+    box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
+}
+
+.navMenu .dropdown-menu li i{
+    padding-right: 10px;
+}
+
+.navMenu .dropdown-menu li a {
+    background-color: #fff;
+    line-height:18px;
+    font-weight: 400;
+    text-align: left;
+    font-size:14px;
+    padding: 15px 12px;
+    color: #212121 !important;
+}
+
+.navMenu .dropdown-menu hr{
+    margin: 0px;
+}
+
+#loginBtn{
+    background-color: #fff;
+    color: var(--bs-primary-rgb);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+}
+
+@media screen and (max-width: 989px) {
+    .explore{
+        width: auto;
+        text-align: center;
+    }
+
+    .navMenu li, 
+    .input-group {
+        margin: 10px 20px;
+    }
+    
+}
+
+.br-0 { border-radius: 0px; }
+.br-2 { border-radius: 2px; }
