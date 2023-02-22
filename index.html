@@ -2,38 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+
+    <!-- Meta Header-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
+        Lifestyle, Books & More. Best Offers!
     </title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+
+    <!-- CDNs section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/c38bdd30d0.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- Javascript -->
+    <script src="https://kit.fontawesome.com/c38bdd30d0.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-primary p-0">
-            <div class="container-md">
-                <a class="navbar-brand explore" href="#">
-                    <img src="assets/images/flipkart.png" alt="Flipkart" width="75">
-                    <p>Explore <span>Plus <img src="assets/images/plus.png" width="10" alt="" srcset=""></span></p>
-                </a>
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <div class="container-lg">
+                <button class="navbar-toggler text-white border-0 btn-outline-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGIiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyAxOGgxOHYtMkgzdjJ6bTAtNWgxOHYtMkgzdjJ6bTAtN3YyaDE4VjZIM3oiLz48L3N2Zz4="
+                        alt="" />
                 </button>
-                <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
+                <a class="navbar-brand explore" href="#">
+                    <img src="assets/images/flipkart.png" alt="Flipkart" width="75" />
+                    <p>
+                        Explore
+                        <span>Plus
+                            <img src="assets/images/plus.png" width="10" alt="" srcset="" /></span>
+                    </p>
+                </a>
+                <div class="collapse navbar-collapse bg-primary z-3" id="navbarSupportedContent">
                     <form class="d-flex w-100" role="search">
-                        <div class="input-group ">
+                        <div class="input-group">
                             <input class="form-control b-0 br-0" type="search"
-                                placeholder="Search for products, brands and more" aria-label="Search" id="searchInp">
-                            <span class="input-group-text bg-white border-0  br-0">
+                                placeholder="Search for products, brands and more" aria-label="Search" id="searchInp" />
+                            <span class="input-group-text bg-white border-0 br-0">
                                 <button class="border-0 br-2 bg-white">
                                     <svg width="20" height="20" viewBox="0 0 17 18" class=""
                                         xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +69,6 @@
                             </span>
                         </div>
                     </form>
-
                     <ul
                         class="navMenu navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-around w-100">
                         <li class="nav-item">
@@ -66,47 +84,65 @@
                                 More
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><i><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="14" class=""
-                                    viewBox="0 0 12 14">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path d="M-4-3h20v20H-4z"></path>
-                                        <path fill="#2874F1"
-                                            d="M6.17 13.61c-1.183 0-1.922-.723-1.922-1.88H8.09c0 1.157-.74 1.88-1.92 1.88zm4.222-5.028l1.465 1.104v1.07H0v-1.07l1.464-1.104v-2.31h.004c.035-2.54 1.33-4.248 3.447-4.652V.992C4.915.446 5.37 0 5.928 0c.558 0 1.014.446 1.014.992v.628c2.118.404 3.412 2.112 3.446 4.65h.004v2.312z">
-                                        </path>
-                                    </g>
-                                </svg></i> Notification Preferences</a></li>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item" href="#">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class=""
+                                                viewBox="0 0 12 14">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path d="M-4-3h20v20H-4z"></path>
+                                                    <path fill="#2874F1"
+                                                        d="M6.17 13.61c-1.183 0-1.922-.723-1.922-1.88H8.09c0 1.157-.74 1.88-1.92 1.88zm4.222-5.028l1.465 1.104v1.07H0v-1.07l1.464-1.104v-2.31h.004c.035-2.54 1.33-4.248 3.447-4.652V.992C4.915.446 5.37 0 5.928 0c.558 0 1.014.446 1.014.992v.628c2.118.404 3.412 2.112 3.446 4.65h.004v2.312z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        Notification Preferences
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">
-                                    <i><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" class=""
-                                        viewBox="0 0 14 17">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <path fill="#2874F0" fill-rule="nonzero"
-                                                d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z">
-                                            </path>
-                                        </g>
-                                    </svg></i>
-                                    24x7 Customer Care</a></li>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <hr class="dropdown-divider" />
                                 </li>
-                                <li><a class="dropdown-item" href="#"> <i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                    height="14" class="" viewBox="0 0 18 10">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path fill="#2874F0" fill-rule="nonzero"
-                                            d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0">
-                                        </path>
-                                    </g>
-                                </svg></i> Advertise</a></li>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item" href="#">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class=""
+                                                viewBox="0 0 14 17">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path fill="#2874F0" fill-rule="nonzero"
+                                                        d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        24x7 Customer Care
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><i>
-                                    <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="14" class=""
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class=""
+                                                viewBox="0 0 18 10">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path fill="#2874F0" fill-rule="nonzero"
+                                                        d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        Advertise
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class=""
                                                 viewBox="0 0 12 14">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path d="M-4-3h20v20H-4z"></path>
@@ -115,23 +151,295 @@
                                                     </path>
                                                 </g>
                                             </svg>
-                                </i> Download</a></li>
+                                        </i>
+                                        Download
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> <i> <svg class="V3C5bO" width="14" height="14"
-                                        viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <a class="nav-link" href="#">
+                                <i>
+                                    <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path class="_1bS9ic"
                                             d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
                                             fill="#fff"></path>
-                                    </svg></i> Cart</a>
+                                    </svg>
+                                </i>
+                                Cart
+                            </a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Categories Section -->
+    <section class="container-fluid categoriesContainer">
+        <div class="categories d-flex justify-content-around">
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Toys</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Mobiles</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Fashion</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Electronics</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid" class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Home</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Appliances</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Travel</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Top Offers</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Beauty, Toys & More</p>
+            </div>
+            <div class="category-item">
+                <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100" alt=""
+                    width="64" />
+                <p class="text-center">Two Wheelers</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Carousel -->
+        <section class="banners mt-2 mt-md-0">
+            <div id="bannersCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/dc989bb97070430a.jpg?q=50"
+                            class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/b212a5700f9e4f1d.jpeg?q=50"
+                            class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/a96670a0535ba0b8.jpg?q=50"
+                            class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <button class="carousel-control-prev justify-content-start" type="button"
+                    data-bs-target="#bannersCarousel" data-bs-slide="prev">
+                    <div class="prev-icon">
+                        <i class="fa-solid fa-chevron-left fa-xl"></i>
+                    </div>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next justify-content-end" type="button"
+                    data-bs-target="#bannersCarousel" data-bs-slide="next">
+                    <div class="next-icon">
+                        <i class="fa-solid fa-chevron-right fa-xl"></i>
+                    </div>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="electronic-products">
+                <div class="products-container container-fluid p-0">                
+                    <div class="category-card">
+                        <p class="card-title">Shop for a Cool Summer</p>
+                        <button class="btn btn-primary card-btn mt-4">View All</button>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper d-flex" id="electronic-products">
+                        </div>
+                        <div class="swiper-button-next">
+                            <div class="next-icon">
+                                <i class="fa-solid fa-chevron-right fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <div class="prev-icon">
+                                <i class="fa-solid fa-chevron-left fa-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summer-products mt-3">
+                <div class="products-container container-fluid p-0 ">                
+                    <div class="category-card">
+                        <p class="card-title">Best Of Electronics</p>
+                        <button class="btn btn-primary card-btn mt-4">View All</button>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper d-flex" id="summer-products">
+                        </div>
+                        <div class="swiper-button-next">
+                            <div class="next-icon">
+                                <i class="fa-solid fa-chevron-right fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <div class="prev-icon">
+                                <i class="fa-solid fa-chevron-left fa-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sport-products mt-3">
+                <div class="products-container container-fluid p-0">                
+                    <div class="category-card">
+                        <p class="card-title">Sports, Healthcare & more</p>
+                        <button class="btn btn-primary card-btn mt-4">View All</button>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper d-flex" id="sport-products">
+                        </div>
+                        <div class="swiper-button-next">
+                            <div class="next-icon">
+                                <i class="fa-solid fa-chevron-right fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <div class="prev-icon">
+                                <i class="fa-solid fa-chevron-left fa-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>
+
+<script>
+    // Products Viewer
+    {
+        var products = [
+            {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            },
+            {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/kuczmvk0/cases-covers/back-cover/w/w/t/m-12954-colorcase-original-imag7g7knnn66wdh.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            },
+            {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/l12h1u80/cases-covers/back-cover/v/7/9/sgf235g-pat367-my-thing-original-imagcprak4yhdbh5.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            }, {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            },
+            {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/kuczmvk0/cases-covers/back-cover/w/w/t/m-12954-colorcase-original-imag7g7knnn66wdh.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            },
+            {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/l12h1u80/cases-covers/back-cover/v/7/9/sgf235g-pat367-my-thing-original-imagcprak4yhdbh5.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            }, {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            },
+            {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/kuczmvk0/cases-covers/back-cover/w/w/t/m-12954-colorcase-original-imag7g7knnn66wdh.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            },
+            {
+                name: "Monitors",
+                url: "https://rukminim1.flixcart.com/image/200/200/l12h1u80/cases-covers/back-cover/v/7/9/sgf235g-pat367-my-thing-original-imagcprak4yhdbh5.jpeg?q=70",
+                starting_price: "9999",
+                brand: "SAMSUNG"
+            }
+        ]
+
+        var electronics = "";
+
+        products.forEach(ele => {
+            electronics += `
+                <div class="swiper-slide product-card">
+                    <div class="product-image">
+                        <img class="img-fluid" src="${ele.url}" alt="" width="auto" height="200px">
+                    </div>
+                    <p class="product-title mt-4 mb-0">${ele.name}</p>
+                    <p class="product-price mt-2 mb-0">From &#x20B9;$${ele.starting_price}</p>
+                    <p class="product-brand mt-2 mb-0">${ele.brand}</p>
+                </div>
+        `;
+        });
+
+        document.getElementById("electronic-products").innerHTML += electronics;
+        document.getElementById("summer-products").innerHTML += electronics;
+        document.getElementById("sport-products").innerHTML += electronics;
+    }
+
+    // Swiper script
+    {
+        let swiper = new Swiper('.mySwiper', {
+            loop: true,
+            slidesPerView: 'auto',
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        console.log(swiper);
+    }
+</script>
