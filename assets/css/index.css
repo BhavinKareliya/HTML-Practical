@@ -62,7 +62,8 @@ body {
     border-radius: 2px 0 0 2px;
     border: inherit;
 }
-#searchInp:focus{
+
+#searchInp:focus {
     box-shadow: none;
 }
 
@@ -78,6 +79,10 @@ body {
     padding: 0px;
     width: 240px;
     box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 
 .dropdown-menu li i {
@@ -124,7 +129,7 @@ body {
     justify-content: center;
 }
 
-.categories {
+#categories {
     width: 100%;
     max-width: 1280px;
     display: flex;
@@ -132,7 +137,7 @@ body {
     overflow-x: auto;
 }
 
-.categories .category-item {
+#categories .category-item {
     min-width: 100px;
     display: flex;
     flex-direction: column;
@@ -153,8 +158,6 @@ main {
     padding: 8px;
 }
 
-
-
 .carousel-control-next,
 .carousel-control-prev,
 .swiper-button-next,
@@ -164,6 +167,11 @@ main {
     opacity: 1;
     margin: 0;
     padding: 0;
+}
+
+.banners .next-icon,
+.banners .prev-icon {
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);
 }
 
 .next-icon {
@@ -188,7 +196,7 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 1px 2px 10px 1px rgb(0 0 0 / 30%); */
+    box-shadow: 1px 2px 10px 1px rgb(0 0 0 / 30%);
 }
 
 /* Product section */
@@ -251,9 +259,18 @@ main {
     opacity: .6;
 }
 
-.category-card{
+.summer-products .category-card {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90");
+}
+
+.sport-products .category-card{
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/898b527fdf29b17a.jpg?q=90");
+}
+
+.category-card {
     text-align: center;
-    min-width: 230px;
+    max-width: 280px;
+    min-width: 280px;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: bottom;
@@ -275,28 +292,37 @@ main {
     text-transform: capitalize;
 }
 
-.category-card .card-title{
+.category-card .card-title {
     font-size: 30px;
     line-height: 1.38;
     font-weight: 400;
     word-wrap: break-word;
 }
 
-.swiper {
-    width: calc(100% -230px);
-}
-
-.swiper-slide { 
+.swiper-slide {
     width: auto;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
     content: none;
 }
 
-.products > div{
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: hsla(0, 0%, 100%, .98);
+    margin: -10px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+
+.products>div {
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
 }
+
 @media screen and (max-width: 989px) {
     .explore {
         width: auto;
@@ -321,11 +347,12 @@ main {
         border-radius: 0;
     }
 
-    .category-card{
+    .category-card {
         display: none;
     }
 
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
 }
